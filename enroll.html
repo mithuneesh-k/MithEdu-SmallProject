@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment | MithEdu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body data-page="enroll">
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">Mith<span>Edu</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Overview</a></li>
+                    <li><a href="enroll.html" class="active">Enrollment</a></li>
+                    <li><a href="mentors.html">Advisors</a></li>
+                </ul>
+            </nav>
+            <div id="live-clock" class="clock">00:00:00</div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="dashboard-header">
+            <div class="welcome-box">
+                <h1>Registration</h1>
+                <p class="muted">Join a new program for the upcoming term.</p>
+            </div>
+        </div>
+
+        <section class="card form-box">
+            <form id="enrollment-form" novalidate>
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Mithun" required>
+                    <span id="name-error" class="error-text"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Student Email</label>
+                    <input type="email" id="email" placeholder="hello@mithu.com" required>
+                    <span id="email-error" class="error-text"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="course">Program Selection</label>
+                    <select id="course" required>
+                        <option value="">Select a Course</option>
+                        <option value="AI Engineering">AI Engineering</option>
+                        <option value="Statistical Analysis">Statistical Analysis</option>
+                        <option value="Database Management">Database Management</option>
+                        <option value="AI Ethics and Law">AI Ethics and Law</option>
+                        <option value="Reality Engineering">Reality Engineering</option>
+                    </select>
+                    <span id="course-error" class="error-text"></span>
+                </div>
+
+                <button type="submit" class="btn-primary">Confirm Enrollment</button>
+            </form>
+
+            <div id="success-msg" class="success-card hidden">
+                <h3>Welcome Aboard!</h3>
+                <p>Registration confirmed for <b id="enrolled-course"></b>.</p>
+                <p style="margin-top: 1rem;"><a href="index.html" style="color: inherit; font-weight: 700;">Back to
+                        Dashboard</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 MithEdu Dashboard | Created by <strong>Mithuneesh</strong></p>
+            <div class="status">
+                <span class="dot"></span> System Online
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MithEdu | Learning Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body data-page="home">
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">Mith<span>Edu</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Overview</a></li>
+                    <li><a href="enroll.html">Enrollment</a></li>
+                    <li><a href="mentors.html">Advisors</a></li>
+                </ul>
+            </nav>
+            <div id="live-clock" class="clock">00:00:00</div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="dashboard-header">
+            <div class="welcome-box">
+                <h1 id="welcome-msg">Good Day.</h1>
+                <p id="user-display" class="muted">Initializing your dashboard...</p>
+            </div>
+            <div class="quick-stats">
+                <div class="stat-card">
+                    <span class="label">Credits</span>
+                    <span class="value">15</span>
+                </div>
+                <div class="stat-card">
+                    <span class="label">Attendance</span>
+                    <span class="value">92%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-system">
+            <!-- Learning Progress -->
+            <section class="card span-2">
+                <div class="card-title">
+                    <h2>Current <em>Courses</em></h2>
+                    <p>Academic progress for Semester 2.</p>
+                </div>
+
+                <div class="courses-vibrant-list">
+                    <!-- Course 1 -->
+                    <div class="course-item c-red">
+                        <div class="c-header">
+                            <div class="c-info">
+                                <strong>AI Engineering</strong>
+                                <span class="prof">Prof. Tony Stark</span>
+                            </div>
+                            <span class="c-tag">Core</span>
+                        </div>
+                        <div class="p-container">
+                            <div class="p-track">
+                                <div class="p-fill" style="width: 85%"></div>
+                            </div>
+                            <span class="p-num">85%</span>
+                        </div>
+                    </div>
+
+                    <!-- Course 2 -->
+                    <div class="course-item c-blue">
+                        <div class="c-header">
+                            <div class="c-info">
+                                <strong>Statistical Analysis</strong>
+                                <span class="prof">Prof. Chandler Bing</span>
+                            </div>
+                            <span class="c-tag">Math</span>
+                        </div>
+                        <div class="p-container">
+                            <div class="p-track">
+                                <div class="p-fill" style="width: 40%"></div>
+                            </div>
+                            <span class="p-num">40%</span>
+                        </div>
+                    </div>
+
+                    <!-- Course 3 -->
+                    <div class="course-item c-green">
+                        <div class="c-header">
+                            <div class="c-info">
+                                <strong>Database Management</strong>
+                                <span class="prof">Prof. Michael Scott</span>
+                            </div>
+                            <span class="c-tag">Systems</span>
+                        </div>
+                        <div class="p-container">
+                            <div class="p-track">
+                                <div class="p-fill" style="width: 90%"></div>
+                            </div>
+                            <span class="p-num">90%</span>
+                        </div>
+                    </div>
+
+                    <!-- Course 4 -->
+                    <div class="course-item c-navy">
+                        <div class="c-header">
+                            <div class="c-info">
+                                <strong>AI Ethics and Law</strong>
+                                <span class="prof">Prof. Harvey Specter</span>
+                            </div>
+                            <span class="c-tag">Ethics</span>
+                        </div>
+                        <div class="p-container">
+                            <div class="p-track">
+                                <div class="p-fill" style="width: 65%"></div>
+                            </div>
+                            <span class="p-num">65%</span>
+                        </div>
+                    </div>
+
+                    <!-- Course 5 -->
+                    <div class="course-item c-purple">
+                        <div class="c-header">
+                            <div class="c-info">
+                                <strong>Reality Engineering</strong>
+                                <span class="prof">Prof. Wanda Maximoff</span>
+                            </div>
+                            <span class="c-tag">Special</span>
+                        </div>
+                        <div class="p-container">
+                            <div class="p-track">
+                                <div class="p-fill" style="width: 25%"></div>
+                            </div>
+                            <span class="p-num">25%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="sidebar-col">
+                <section class="card">
+                    <h2>Announcements</h2>
+                    <div class="notif-list">
+                        <div class="notif-item">
+                            <div class="dot active"></div>
+                            <p>Stark Internship apps are now open.</p>
+                        </div>
+                        <div class="notif-item">
+                            <div class="dot"></div>
+                            <p>Michael Scott's Database Lab canceled.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card mt-20">
+                    <h2>Recent Log</h2>
+                    <div id="dynamic-display" class="mono-text">
+                        Dashboard synchronized.
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 MithEdu Dashboard | Developed by <strong>Mithuneesh</strong></p>
+            <div class="status">
+                <span class="dot-live"></span> System Online
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

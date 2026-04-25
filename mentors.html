@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advisors | MithEdu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body data-page="mentors">
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">Mith<span>Edu</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Overview</a></li>
+                    <li><a href="enroll.html">Enrollment</a></li>
+                    <li><a href="mentors.html" class="active">Advisors</a></li>
+                </ul>
+            </nav>
+            <div id="live-clock" class="clock">00:00:00</div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="dashboard-header">
+            <div class="welcome-box">
+                <h1>Academic Advisors</h1>
+                <p class="muted">Connect with professional mentors in your field.</p>
+            </div>
+            <button id="refresh-mentors" class="btn-primary" style="width: auto; padding: 0.6rem 1.25rem;">Sync
+                List</button>
+        </div>
+
+        <section class="card">
+            <div id="mentors-list" class="mentors-vibrant-grid">
+                <p>Synchronizing with the directory...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 MithEdu Dashboard | Created by <strong>Mithuneesh</strong></p>
+            <div class="status">
+                <span class="dot"></span> System Online
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
